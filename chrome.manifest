@@ -1,0 +1,7 @@
+content	semantic-checker	content/
+overlay	chrome://browser/content/browser.xul	chrome://semantic-checker/content/overlay.xul
+
+locale	semantic-checker	en-US	locale/en-US/
+
+skin	semantic-checker	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://semantic-checker/skin/overlay.css

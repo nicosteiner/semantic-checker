@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://semantic-checker/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://semantic-checker/locale/overlay.dtd">
+<overlay id="semantic-checker-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+         
+  <script src="yahoo-dom-event.js"/>
+  <script src="overlay.js"/>
+
+  <statusbar id="status-bar">
+		<!--<statusbarpanel id="semantic-checker-panel" context="semanticCheckerContextMenu">-->
+		<statusbarpanel id="semantic-checker-panel">
+      <image id="semanticCheckerIcon" src="chrome://semantic-checker/content/logo-16.png" onmouseover="this.style.cursor = 'pointer';" onmousedown="SemanticChecker.checkCommand(event)"/>
+    </statusbarpanel>
+    <!--
+    <menupopup id="semanticCheckerContextMenu">
+      <menuitem label="Homepage" oncommand="SemanticChecker.gotoSemanticCheckerHome()"/>
+      <menuseparator/>
+      <menuitem label="Hide" type="checkbox" oncommand="SemanticChecker.onToggleOption(this)" option="semanticchecker.hidestatusbar"/>
+    </menupopup>
+    -->
+  </statusbar>
+  
+</overlay>
